@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="Default.aspx" title="Inicio"  description="Pagina principal">
+    <siteMapNode url="  " title="Gestión" description="Gestión">
+      <siteMapNode url="Rectorado.aspx" title ="Rectorado" description="Rectorado UTA"/>
+      <siteMapNode url="Vicerrectorado.aspx" title ="Vicerrectorado" description="Vicerrectorado UTA"/>
+      <siteMapNode url="ObservatorioEconomico.aspx" title ="Observatorio economico" description="Observatorio economico UTA"/>
+    </siteMapNode>
+    <siteMapNode url="" title="Datos Estudiantes"  description="Aquí podrás actualizar la base de datos de los estudiantes">
+      <siteMapNode url="DatosSistemas.aspx" title ="Sistemas" description="Filosofía UTA"/>
+      <siteMapNode url="" title ="Tecnologías de la Información" description="Filosofía UTA"/>
+    </siteMapNode>
+    <siteMapNode url="" title="Universidad" description="Universidad Técnica de Ambato">
+      <siteMapNode url="Filosofia.aspx" title ="Filosofía" description="Filosofía UTA"/>
+      <siteMapNode url="Himno.aspx" title ="Himno" description="Himno UTA">
+        <siteMapNode url="" title="Nacional"  description="Acerca de la aplicacion" />
+        <siteMapNode url="" title="Provincial"  description="Acerca de la aplicacion" />
+      </siteMapNode>
+      <siteMapNode url="MarcoLegal.aspx" title ="Marco Legal" description="Marco Legal UTA"/>
+    </siteMapNode>
+    <siteMapNode url="" title="Administración" description="Administración">
+      <siteMapNode url="~/Administradores/CrearUsuario.aspx" title="Crear usuario" description="Crear usuario" />
+      <siteMapNode url="~/Administradores/CrearRoles.aspx" title="Crear roles"  description="Crear roles" />
+    </siteMapNode>
+    <siteMapNode url="About.aspx" title="Acerca de..."  description="Acerca de la aplicacion" />
+  </siteMapNode>
+</siteMap>
