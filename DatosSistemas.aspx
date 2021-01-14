@@ -4,6 +4,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
     <p>
-        Crear interfaz para sistemas</p>
+        Crear interfaz para sistemas </p>
+    <p>
+        Prueba de guardado</p>
 </asp:Content>
 
