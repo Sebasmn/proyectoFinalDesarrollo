@@ -4,6 +4,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
     <p>
-    GestiON final</p>
+    GestiON finall</p>
 </asp:Content>
 
