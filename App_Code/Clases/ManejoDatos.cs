@@ -10,8 +10,23 @@ public class ManejoDatos
 {
     public ManejoDatos()
     {
-        //
-        // TODO: Agregar aquí la lógica del constructor
-        //
+    }
+    private Connection GetConnectionString()
+    {
+        MySqlConnection connection;
+        string server = "localhost";
+        string database = "u179925486_uta2020ds4";
+        string uid = "u179925486_grupo";
+        string password = "jZ=4k1x3]";
+        string connectionString;
+        connectionString = "SERVER=" + server + ";" + "DATABASE=" +
+        database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
+        connection = new MySqlConnection(connectionString);
+        return connection;
+    }
+
+    private Estudiante getEstudiante(string cedula)
+    {
+
     }
 }
