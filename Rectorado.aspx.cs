@@ -14,7 +14,48 @@ public partial class Rectorado : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-    
+
+        cargarDatos();
+    }
+
+    private void cargarDatos()
+    {
+        List<String> datos = new List<string>();
+        datos.Add("Clay Aldaz");
+        datos.Add("Pedrito");
+        datos.Add("Maria Chavez");
+
+        DropDownList1.DataSource = datos;
+       DropDownList1.DataBind();
+
+        List<String> dias = new List<string>();
+        for (int i = 1; i <= 31; i++)
+        {
+            dias.Add(i.ToString());
+        }
+
+        DropDownList2.DataSource = dias;
+        DropDownList2.DataBind();
+
+
+        List<String> meses = new List<string>();
+        meses.Add("enero");
+        meses.Add("febrero");
+        meses.Add("marzo");
+        meses.Add("abril");
+        meses.Add("mayo");
+        meses.Add("junio");
+        meses.Add("julio");
+        meses.Add("agosto");
+        meses.Add("septiembre");
+        meses.Add("octubre");
+        meses.Add("noviembre");
+        meses.Add("diciembre");
+
+
+        DropDownList3.DataSource = meses;
+        DropDownList3.DataBind();
+
     }
 
     protected void Button1_Click(object sender, EventArgs e)
@@ -117,10 +158,10 @@ public partial class Rectorado : System.Web.UI.Page
     private void getConexion()
     {
           MySqlConnection connection;
-        string server = "bvnt82fpdk2x6l6idnds-mysql.services.clever-cloud.com";
-        string database = "bvnt82fpdk2x6l6idnds";
-        string uid = "uonan3vxxpvmsrwl";
-        string  password = "2ReA8lKlWNEYEHFYZbEU";
+        string server = "localhost";
+        string database = "u179925486_uta2020ds4";
+        string uid = "u179925486_grupo";
+        string  password = "jZ=4k1x3]";
         string connectionString;
         connectionString = "SERVER=" + server + ";" + "DATABASE=" +
         database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
@@ -128,6 +169,7 @@ public partial class Rectorado : System.Web.UI.Page
        connection = new MySqlConnection(connectionString);
         if (connection!=null)
         {
+            MySqlCommand cmd = new MySqlCommand();
             TextBox1.Text = "CONECTADO";
         }
     }
